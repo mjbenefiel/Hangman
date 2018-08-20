@@ -1,0 +1,25 @@
+Word Guess Game
+
+Include "Press any key to get started" prompt/alert
+Include wins (# of times user guessed the word correctly)
+If the word is "madonna" display it like this when game starts: _ _ _ _ _ _ _
+As user guesses correct letters, reveal them
+Number of guesses remaining for user
+Display already guessed letters. Display like L Z Y V X.
+After use wins/loses, the game should automatically choose another word
+
+Bonuses
+
+Play sound or song when user guesses correct word
+Write CSS rules to design theme
+Organize game code as an object except for key events
+Save whole game and properties in an object
+Save any of your game's functions as methods, and call 
+them underneath your object declaration using event listeners.
+
+
+Don't forget to place your global variables and functions above 
+your object.
+
+
+Remember: global variables, then objects, then calls.

@@ -12,7 +12,6 @@ for(i = 0; i < word.length; i++){
 var alreadyGuessed = 0; //Tracks if current guess have been guess before
 var answerToDisplay = answerArray.join(' '); //joins the array to a space-separate string, is updated as players guess
 document.getElementsByClassName('answer')[0].innerHTML = answerToDisplay; //displays the blanks for the user to see
-
 function contains(thing, array){
   if(array.indexOf(thing) > -1){
     return true;
@@ -21,6 +20,10 @@ function contains(thing, array){
     return false;
   }
 };
+
+//////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+
 function reset(){
  word = words[Math.floor(Math.random() * words.length)]; //selects a random word from word list
  answerArray = []; //creates empty array to house answer

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Stranger Things Hang Man</title>
+        <!-- Allows scalability for different sized screens -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <!-- Link to reset css -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <!-- Link to Google Fonts Cinzel -->
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+        <!-- Link to styles in css -->
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+    </head>
+    <body>
+            <body background="assets/images/maxresdefault.jpg">
+        <div class="container">
+            <div class="row main-row">
+                <!-- Stranger Things logo -->
+                <div class="hang-man-view text-center col-xs-6">
+                    <img id="logo" src="assets/images/maxresdefault.jpg" alt="Stranger Things logo">
+                    <br>
+                    <div id="imageHolder text-center">
+                        <img class="thumbnail img-responsive" src=''id='imagesForWords'>
+                    </div>
+                </div>
+                <div class="word col-xs-2">
+                     <!-- Box that contains the current word -->
+                    <h1>Current Word: </h1>
+                    <div id="hold-word">
+                    <span class="text-design text-center" id="currentWord"></span>
+                    </div>
+                </div>
+                <!-- the panel for the letter guesses and win counts -->
+                <div class="score-view col-xs-2">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h1>Score</h1>
+                            <h4>Press any key to begin.</h4>
+                            <div class="row">
+                                <div class="col-xs-12">
+                            <p class="text-design">Wins: <span id="wins">0</span></p>
+                            <p class="text-design">Remaining Tries: <span id="remainingTries">15</span></p>
+                            <p class="text-design">Letters Tried: <span id="lettersTried"></span></p>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/game.js"></script>
+    </body>
+</html>

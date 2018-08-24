@@ -11,7 +11,7 @@
 // ================
 
 	// Array that contains all the possible words to be guessed.
-	var strangerThings = ["js", "css", "html"];
+	var surfinUSA = ["js", "css", "html"];
 	// Empty variable to store the current word to be guessed as a string.
 	var currentWord = "";
 	// Empty variable to hold the actual letters in the currentWord
@@ -35,7 +35,7 @@
 	function newGame () {
 
 		//Computer selects a word from the array
-		currentWord = strangerThings[Math.floor(Math.random() * strangerThings.length)];
+		currentWord = surfinUSA[Math.floor(Math.random() * surfinUSA.length)];
 			console.log("The current word chosen is: " + currentWord); // Testing via Console.Log
 
 		//Grab the current word and break it apart into each individual letter

@@ -1,19 +1,16 @@
 //wins
 var win = 0;
 //losses
-var lose = 0;
+var loss = 0;
 //wins and losses
-var total = win + lose;
+var total = win + loss;
 //tries available
 var tries = 15;
 //an array of the tried letters
 var triedLetters = [];
 //an array of the alphabet for data validation
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-//an array of the possible answers
-//I have used an array of objects instead of using a constructor with two arrays because 
-//I use constructors to build a node.js version of hangman
-//which can be found on my github, bewitchedfencer
+
 var dreams = [{
         word: "using telekinisis",
         used: false
@@ -63,11 +60,11 @@ var dreams = [{
         used: false
     }
 ];
-//an array of the letters in the solution
+//array of the letters in the solution
 var letterArray = [];
-//the chosen word
+//chosen word
 var word = '';
-//an array for the number of dashes to guess the word
+//array for the number of dashes for guessing word
 var dashArray = [];
 //random object
 var randomObject;
@@ -99,9 +96,7 @@ function replaceDash() {
 //declared function for creating dashes
 function dashes(word) {
     letterArray = word.split("");
-    //finding the index number of the word in the original array
-    //fix the removal of the words from the list. Or add an element to the object that is a boolean and changes
-    //when the word is reset
+   
     for (var i = 0; i < letterArray.length; i++) {
         if (letterArray[i] == " ") {
             dashArray.push(" ");
@@ -130,9 +125,9 @@ function guessLetter() {
         
         //making sure the letter is lowercase for comparison
         letter.toLowerCase();
-        //the key is checked to see if it is part of the alphabet.
+        //key is checked to see if it is part of the alphabet.
         if (alphabet.indexOf(letter) >= 0) {
-            //then the key is checked to see if it is a unique letter.
+            //key is checked to see if it is a unique letter.
             if (triedLetters.indexOf(letter) === -1) {
                 //a new letter is added to the array of attempted letters.
                 triedLetters.push(letter);
@@ -165,7 +160,7 @@ function guessLetter() {
                     //losing condition
                     replaceDash();
                     if (tries === 0) {
-                        lose++;
+                        loss++;
                         document.getElementById("currentWord").innerHTML = word;
                       
                         if (total === dreams.length) {
@@ -187,7 +182,6 @@ function guessLetter() {
 //for when the game is restarted after a word has been guessed.
 function restart() {
     randomWord();
-   
     dashArray = [];
     dashes(word);
     triedLetters = [];
@@ -200,7 +194,6 @@ function restart() {
 //calling my functions
 
 randomWord();
-
 dashes(word);
 guessLetter();
 

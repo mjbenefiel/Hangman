@@ -11,9 +11,11 @@ THE PROJECT
 
 Bootstrap theme: Grayscale v5.0.1
 
-Game CSS (style.css) used to style Hangman portion of the webpage/app
-Grayscale CSS used with Bootstrap theme
-Vendor folder used with Bootstrap theme
+Game CSS (style.css) used to style Hangman portion of the webpage/app.
+
+Grayscale CSS used with Bootstrap theme.
+
+Vendor folder used with Bootstrap theme.
 
 
 JavaScript:

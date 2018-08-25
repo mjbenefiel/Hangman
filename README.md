@@ -1,7 +1,8 @@
 Project: Hangman: Lucid Dreams Edition
+
 Author: Michael Benefiel
 
-Why I created this project: Homework for the University of Kansas Coding Boot Camp, and to develop basic JS skills
+Why I created this project: Homework for the University of Kansas Coding Boot Camp, and to develop basic JS skills.
 
 Feel free to use some or all of this code if you're trying to complete a similar project.
 

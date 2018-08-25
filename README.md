@@ -19,7 +19,9 @@ Vendor folder used with Bootstrap theme.
 
 
 JavaScript:
+
 Declared game variables and arrays for:
+
 - win (game)
 - loss (game)
 - total (wins and losses)

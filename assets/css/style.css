@@ -1,101 +1,100 @@
-html{
-  background: #111;
-  font-family: sans-serif;
-  color: white;
-}
-.main-wrap{
-  width: 400px;
-  height: 300px;
-  background: gray;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: 30px auto;
-  border-radius: 10px;
-}
-.answer-wrap{
-  background: #444;
-  width: 250px;
-  border-radius: 5px;
-  margin: 10px;
-}
 
-.wins-wrap{
-  background: #444;
-  width: auto;
-  height: auto;
-  border-radius: 5px;
-  padding: 10px;
-}
+/* game CSS */
 
-.guesses-wrap{
-  background: #444;
-  width: auto;
-  height: auto;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.wins{
-  font-size: 50px;
-  color: red;
-  background: #444;
-  width: auto;
-  height: auto;
-
-}
-
-.guesses{
-  font-size: 50px;
-  color: red;
-  background: #444;
-  width: auto;
-  height: auto;
-
-}
-
-.input-wrap{
-  width: 110px;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-}
-#user-guess{
-  width: 30px;
-  height: 30px;
-  font-weight: bold;
-  border-radius: 5px;
-  text-align: center;
-  background: rgba(0,0,0,0.8);
-  outline: 0;
-  border: none;
-  padding: 0;
-  color: white;
-}
-.guess-btn{
-  height: 30px;
-  width: 60px;
-  background: green;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.reset{
-  height: 30px;
-  width: 30px;
-  background: darkred;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  right: 0;
-  align-self: flex-end;
-  transform: translate(-10px,-50px);
-  font-size: 1.5em;
-}
+/* The row with the major boxes */
+.main-row{
+    display:flex;
+    justify-content: space-around;  
+    margin-top:150px;
+    width: 100%;
+   }
+   
+   
+   /* panel on bottom styling */
+   .score-view{
+       
+       height: auto;
+       width:auto;   
+       padding: 25px 50px 5px 50px;
+       margin-top: -2rem;
+       
+   }
+   
+     .stats {
+       display: inline;
+       font-size: 1rem;
+       word-spacing: 75%;
+           
+     }
+   
+     .bottom-border {
+         padding-bottom: 6rem;
+     }
+   
+   .wins {
+       border-radius: 25px;
+       
+       padding: 20px; 
+       width: auto;
+       height: auto;
+      
+   }
+   
+   .tries {
+       border-radius: 25px;
+       
+       padding: 20px; 
+       width: auto;
+       height: auto;
+     
+   }
+   
+   .tried {
+       border-radius: 25px;
+       
+       padding: 20px; 
+       width: auto;
+       height: auto;
+     
+   }
+   
+   
+   
+   
+   
+   /* The styles for the box with the word they are guessing */
+   .word{
+       
+       width:auto;
+       height:100px;
+      
+       
+       
+   }
+   .text-design{
+       font-family: 'Cinzel', serif; 
+       color:white;   
+   }
+   
+   p{
+       color:white;
+   }
+   
+   .currentWord {
+       font-size: 3rem;
+       color:#4f837f;
+       margin-top: -6rem;
+      
+       
+   }
+   
+   
+   #hold-word{
+       display:flex;
+       justify-content: center;
+       margin-top:30px;
+   }
+   
+   
+   
+   

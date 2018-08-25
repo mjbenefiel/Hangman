@@ -1,8 +1,10 @@
-Project: Word Guess Game / Hangman
+Project: Hangman
 Author: Michael Benefiel
 
-Theme: Surfin' USA
+Theme: Lucid Dreams
 Hint: Beaches in California
+
+Bootstrap theme
 
 HTML/CSS
 Create HTML template

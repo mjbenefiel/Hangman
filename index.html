@@ -1,77 +1,103 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <head>
 
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-</head>
+    <title>Hangman | Lucid Dreams Edition</title>
 
-<body>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <div class="main-wrap">
-    <span onclick='reset()' class="reset">Play Again</span>
-    <div class="guesses-wrap">
-      <p class="instructions">Press any key to get started</p>
-  <!--     <p >You have <b><span class="guesses">6</span></b> guesses left.</p> -->
-    </div>
-    <div class="answer-wrap">
-      <p class="answer">******</p>
-    </div>
-    <div class="input-wrap">
-      <input type="text" id="user-guess" value="">
-      <div onclick='guess()' class="guess-btn">
-        <p>Guess</p>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/grayscale.css" rel="stylesheet">
+
+    <!-- Hangman Game CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+     
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">Hangman</h1>
+          <h2 class="secondHead text-white-50 mx-auto mt-2 mb-5">Lucid Dreams Edition</h2>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">Click here to begin your journey</a>
+        </div>
       </div>
-    </div>
-    <div class="debug"></div>
-  </div>
+    </header>
 
-  <div class="main-wrap">
-    
-    <div class="guesses-wrap">
-      <p class="instructions">Number of wins</p>
-  <!--     <p >You have <b><span class="guesses">6</span></b> guesses left.</p> -->
-    </div>
-    <div class="wins-wrap">
-      <p class="wins"></p>
-    </div>
-   
-    <div class="debug"></div>
-  </div>
+         
 
-  <div class="main-wrap">
-    
-    <div class="guesses-wrap">
-      <p class="instructions">Words guessed</p>
-  <!--     <p >You have <b><span class="guesses">6</span></b> guesses left.</p> -->
-    </div>
-    <div class="guesses-wrap">
-      <p class="guesses"></p>
-    </div>
-   
-    <div class="debug"></div>
-  </div>
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">Press any key to get started</h2>
+            <p class="text-white-50">Welcome to Hangman: Lucid Dreams Edition<br><br>Sit back, relax and catch a few more ZzZzZzz's before getting back to reality<br><br>Hint: Google "101 things to do in a lucid dream"</p>
+          
 
+             <!-- hangman game -->
+        
+             <div class="container">
+               
+                <div class="row main-row">
+                         
+                    <div class="word col-12">
+                         <!-- Box that contains the current word -->
+                        <p class="text-50 currentWord">Current Word </p>
+                        <div id="hold-word">
+                        <span class="text-design text-center" id="currentWord"></span>
+                        </div>
+                    </div>
+                    
+                    <!-- the panel for the letter guesses and win counts -->
+                    <div class="score-view col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                
+                                <div class="row">
+                                    <div class="bottom-border col-12">
+                                <p class="wins text-white-50 stats">Wins: <span id="wins">0</span></p>
+                                <p class="tries text-white-50 stats">Remaining Tries: <span id="remainingTries">15</span></p>
+                                <p class="tried text-white-50 stats">Letters Tried: <span id="lettersTried"></span></p>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        
+      </div>
+    </section>
+
+ 
  
 
   
- 
-  
-  <script src="assets/javascript/game.js"></script>  
-</body>
+
+    <!-- Custom scripts for this template -->
+    <script src="assets/javascript/grayscale.min.js"></script>
+
+    <!-- Game script -->
+    <script src="assets/javascript/game.js"></script>
+
+  </body>
+
 </html>
-
-<!-- wins
-<div class="wins-wrap">
-      
-  <div class="wins-btn">
-    <p>Wins: </p>
-  </div>
-</div>
--->

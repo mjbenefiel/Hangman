@@ -1,24 +1,25 @@
-Project: Hangman: Lucid Dreams Edition
-
+<h1>Hangman: Lucid Dreams Edition</h1>
+<hr></hr>
 Author: Michael Benefiel
 
-Why I created this project: Homework for the University of Kansas Coding Boot Camp, and to develop basic JS skills.
-
 Feel free to use some or all of this code if you're trying to complete a similar project.
+<hr></hr>
 
+<h3> App screenshot </h3>
 
-THE PROJECT
+![alt text](https://raw.githubusercontent.com/mjbenefiel/Word-Guess-Game/master/assets/images/readme.jpg "Hangman")
 
-Bootstrap theme: Grayscale v5.0.1
+<hr></hr>
+<h2> How it works </h2>
+Hit "click here to begin your journey" button. Try to guess the word that's hidden from you by typing in letters.
+<hr></hr>
 
-Game CSS (style.css) used to style Hangman portion of the webpage/app.
+<h2>Technology used</h2>
 
-Grayscale CSS used with Bootstrap theme.
+[Bootstrap theme: Grayscale v5.0.1](https://startbootstrap.com/template-overviews/grayscale/)
+<hr></hr>
 
-Vendor folder used with Bootstrap theme.
-
-
-JavaScript:
+<h4>Below is a thorough, but not comprehensive, step-by-step process of how I got the app running in terms of code</h4>
 
 Declared game variables and arrays for:
 

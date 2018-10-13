@@ -10,6 +10,8 @@ Feel free to use some or all of this code if you're trying to complete a similar
 
 ![alt text](https://raw.githubusercontent.com/mjbenefiel/Word-Guess-Game/master/assets/images/readme.jpg "Hangman")
 
+<h2>Project overview</h2>
+Classic game of hangman set to an ethereal theme. Utilizes JavaScript, without any libraries or APIs.
 <hr></hr>
 <h2> How it works </h2>
 Hit "click here to begin your journey" button. Try to guess the word that's hidden from you by typing in letters.

@@ -1,4 +1,6 @@
 <h1>Hangman: Lucid Dreams Edition</h1>
+
+Live version: https://mjbenefiel.github.io/Hangman
 <hr></hr>
 
 Author: Michael Benefiel
